@@ -1,14 +1,13 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './src/**/*.tsx',
-  ],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {
-      colors: {
-        joao: '#8257e6'
-      }
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 20rem) 1fr',
+        profile: 'max-content 1fr max-content',
+      },
     },
   },
   plugins: [],
